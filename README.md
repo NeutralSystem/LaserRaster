@@ -8,7 +8,7 @@ Load an image, adjust settings, export G-code — no coding required.
 
 Download **GCodeRaster-Setup.exe** from the link above, run the installer, and launch LaserRaster from the Start Menu.
 
-<img src="docs/images/diagram.png" alt="Diagram" width="600" />
+<img src="LaserRaster/LaserRaster.png" alt="Diagram" width="600" />
 
 ## What it does
 
