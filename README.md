@@ -8,6 +8,8 @@ Load an image, adjust settings, export G-code — no coding required.
 
 Download **GCodeRaster-Setup.exe** from the link above, run the installer, and launch LaserRaster from the Start Menu.
 
+<img src="docs/images/diagram.png" alt="Diagram" width="600" />
+
 ## What it does
 
 LaserRaster takes an image (PNG, JPG, BMP, WEBP, TIFF) and converts it into raster G-code that a Marlin-compatible laser engraver can execute. The laser power varies per pixel to reproduce the image as a burn on wood, leather, or similar materials.
