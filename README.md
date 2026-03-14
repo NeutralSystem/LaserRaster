@@ -1,6 +1,6 @@
 # LaserRaster
 
-Free Windows tool to convert images into laser engraving G-code for Marlin-based machines.
+Free Windows/Linux tool to convert images into laser engraving G-code for Marlin-based machines.
 
 Load an image, adjust settings, export G-code — no coding required.
 
@@ -49,6 +49,46 @@ The app scans the image row by row (with optional serpentine/bidirectional scann
 - Windows 10 or later (64-bit)
 - A Marlin-compatible laser engraver that accepts `M3`/`M5` laser commands
 
+## Building from source (Linux)
+
+### Prerequisites
+
+**Python 3.10+** and the system libraries required by PySide6 / Qt:
+
+Ubuntu / Debian:
+```bash
+sudo apt install python3 python3-pip python3-venv libgl1 libegl1 libxkbcommon0 libdbus-1-3
+```
+
+Fedora:
+```bash
+sudo dnf install python3 python3-pip mesa-libGL mesa-libEGL libxkbcommon dbus-libs
+```
+
+Arch:
+```bash
+sudo pacman -S python python-pip mesa libxkbcommon dbus
+```
+
+### Download, install & run
+
+```bash
+# Download the source archive from the latest release
+wget https://github.com/NeutralSystem/LaserRaster/releases/latest/download/LaserRaster-source.zip
+
+# Extract into a package directory
+mkdir LaserRaster-build && cd LaserRaster-build
+unzip ../LaserRaster-source.zip -d LaserRaster
+
+# Create a virtual environment and install dependencies
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r LaserRaster/requirements.txt
+
+# Run
+python3 -m LaserRaster.main
+```
+
 ## License
 
-Free to use.
+MIT, Free to use.
